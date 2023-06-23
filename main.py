@@ -20,7 +20,8 @@ if __name__ == "__main__":
 
     # レンズパターンを計算
     l_phase = -1 * (np.pi * (r_SLM ** 2) / (focal_length * wave_length))
-    l_phase = np.fmod(l_phase, 2 * np.pi)
+    l_phase = np.fmod(l_phase, 2 * np.pi) + np.pi
+    l_phase = np.uint8(l_phase / np.max(l_phase) * 255)
 
     # 出力
     fig = plt.figure()
@@ -28,5 +29,9 @@ if __name__ == "__main__":
     ax1.set_title("Phase Fresnel lens")
     ax1.imshow(l_phase, cmap='gray')
     plt.show()
+
+    # 書き出し
+    l_phase = Image.fromarray(l_phase)
+    l_phase.save("lphase.bmp")
 
 
