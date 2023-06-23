@@ -14,6 +14,7 @@ if __name__ == "__main__":
     xlist = np.array([[i for i in range(width)] for j in range(height)], dtype=int)
     ylist = np.array([[j for i in range(width)] for j in range(height)], dtype=int)
     r = np.sqrt((height/2 - ylist) ** 2 + (width/2 - xlist) ** 2)
+
     # SLM上での距離に変換
     r_SLM = r * pixel_pitch
 

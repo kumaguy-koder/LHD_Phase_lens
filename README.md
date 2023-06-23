@@ -1,2 +1,3 @@
-# isp02
-情報科学プロジェクト演習：ホログラムデザイン
+# Lecture for hologram design 2
+***
+Phase Fresnel lens
