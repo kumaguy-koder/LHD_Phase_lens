@@ -1,3 +1,3 @@
-# Lecture for hologram design 2
+# Lecture for hologram design
 ***
 Phase Fresnel lens
