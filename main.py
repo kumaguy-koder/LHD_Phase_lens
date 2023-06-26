@@ -3,8 +3,8 @@ from PIL import Image
 from matplotlib import pyplot as plt
 
 if __name__ == "__main__":
-    width = 256  # CGH width (pixel)
-    height = 256  # CGH height (pixel)
+    width = 256  # CGH width (pixels)
+    height = 256  # CGH height (pixels)
     focal_length = 1000  # focal length (mm)
     wave_length = 633*10**-6   # wave length (mm)
     pixel_pitch = 20*10**-3  # Pixel pitch of CGH（mm）
